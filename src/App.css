@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Shabnam-FD, Shabnam;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  background-color: #eaecf0;
+}
