@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-cell-fix-right-first::after,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-cell-fix-right-last::after {
+  right: 0;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  text-align: end;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  text-align: end;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-cell-fix-left,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-cell-fix-right {
+  left: 0;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  table
+  tr
+  th.ant-table-selection-column,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  table
+  tr
+  td.ant-table-selection-column,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-selection-column {
+  position: sticky;
+  z-index: 2;
+  right: 0;
+  background-color: #fff;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  background-color: #fafafa;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  background-color: #f9fafb;
+  color: #475467;
+  text-align: start;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > th,
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
+  .ant-table-tbody
+  > tr
+  > td {
+  text-align: start;
+}
+
+:where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper {
+  border-radius: 5px;
+  border: 1px solid #eaecf0;
+}

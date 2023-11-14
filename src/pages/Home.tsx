@@ -15,17 +15,17 @@ interface DataType {
 export const Home = () => {
   const { t } = useTranslation();
 
-  const data: DataType[] = [];
-  for (let i = 0; i < 46; i++) {
-    data.push({
-      key: i,
-      firstName: `حمزه ${i}`,
-      lastName: `قریشی ${i}`,
-      userGroup: "Admin",
-      mobile: "09372303904",
-      email: "hamzeh.ux@gmail.com",
-    });
-  }
+  // const data: DataType[] = [];
+  // for (let i = 0; i < 46; i++) {
+  //   data.push({
+  //     key: i,
+  //     firstName: `حمزه ${i}`,
+  //     lastName: `قریشی ${i}`,
+  //     userGroup: "Admin",
+  //     mobile: "09372303904",
+  //     email: "hamzeh.ux@gmail.com",
+  //   });
+  // }
 
   // handleEdit
   const handleEdit = () => {

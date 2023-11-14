@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import { Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import type { TableRowSelection } from "antd/es/table/interface";
+import deleteIcon from "../../assets/images/icons/Delete.svg";
+import editIcon from "../../assets/images/icons/Edit Square 2.svg";
+import dragIcon from "../../assets/images/icons/Resize-2 1.svg";
 
 import { useTranslation } from "react-i18next";
 
 interface DataType {
   key: React.Key;
-  name: string;
-  age: number;
-  address: string;
+  firstName: string;
+  lastName: string;
+  userGroup: string;
+  mobile: string;
+  email: string;
 }
 
 const Tables = () => {
@@ -17,78 +22,60 @@ const Tables = () => {
 
   const columns: ColumnsType<DataType> = [
     {
-      title: "Full Name",
-      width: 100,
-      dataIndex: "name",
-      key: "name",
-      // fixed: "left",
-    },
-    {
-      title: "Age",
-      width: 100,
-      dataIndex: "age",
-      key: "age",
-      // fixed: "left",
-    },
-    {
-      title: "Column 1",
-      dataIndex: "address",
-      key: "1",
+      title: t("FirstName"),
+      dataIndex: "firstName",
       width: 150,
     },
     {
-      title: "Column 2",
-      dataIndex: "address",
-      key: "2",
+      title: t("LastName"),
+      dataIndex: "lastName",
       width: 150,
     },
     {
-      title: "Column 3",
-      dataIndex: "address",
-      key: "3",
+      title: t("UserGroup"),
+      dataIndex: "userGroup",
       width: 150,
     },
     {
-      title: "Column 4",
-      dataIndex: "address",
-      key: "4",
+      title: t("Mobile"),
+      dataIndex: "mobile",
       width: 150,
     },
     {
-      title: "Column 5",
-      dataIndex: "address",
-      key: "5",
-      width: 150,
+      title: t("Email"),
+      dataIndex: "email",
+      width: 200,
     },
     {
-      title: "Column 6",
-      dataIndex: "address",
-      key: "6",
-      width: 150,
-    },
-    {
-      title: "Column 7",
-      dataIndex: "address",
-      key: "7",
-      width: 150,
-    },
-    { title: "Column 8", dataIndex: "address", key: "8" },
-    {
-      title: "Action",
+      title: "",
       key: "operation",
       fixed: "right",
-      width: 100,
-      render: () => <a>action</a>,
+      width: 150,
+      render: () => (
+        <span style={{ display: "flex", flexDirection: "row-reverse" }}>
+          <a style={{ marginRight: 10 }}>
+            <img src={deleteIcon} alt="delete" />
+          </a>
+          <a style={{ marginRight: 10 }}>
+            <img src={editIcon} alt="edit" />
+          </a>
+          <a>
+            <img src={dragIcon} alt="drag" />
+          </a>
+        </span>
+      ),
     },
   ];
 
   const data: DataType[] = [];
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 46; i++) {
     data.push({
       key: i,
-      name: `Edward ${i}`,
-      age: 32,
-      address: `London Park no. ${i}`,
+      firstName: `حمزه ${i}`,
+      lastName: `قریشی ${i}`,
+      userGroup: "Admin",
+      mobile: "09372303904",
+      email: "hamzeh.ux@gmail.com",
     });
   }
   const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
@@ -104,7 +91,12 @@ const Tables = () => {
   };
 
   return (
-    <Table columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+    <Table
+      rowSelection={rowSelection}
+      columns={columns}
+      dataSource={data}
+      scroll={{ x: "80%" }}
+    />
   );
 };
 
