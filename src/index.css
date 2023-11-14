@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+/* 
 :where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
   .ant-table-cell-fix-right-first::after,
 :where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper
@@ -100,4 +100,4 @@ code {
 :where(.css-dev-only-do-not-override-2i2tap).ant-table-wrapper {
   border-radius: 5px;
   border: 1px solid #eaecf0;
-}
+} */

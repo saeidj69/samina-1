@@ -2,9 +2,9 @@
   "title": "پنل حسابداری ثمینا",
   "about": "درباره ما",
   "home": "خانه",
-  "FirstName": "نام",
-  "LastName": "نام خانوادگی",
-  "UserGroup": "گروه کاربر",
-  "Mobile": "موبایل",
-  "Email": "ایمیل"
+  "firstName": "نام",
+  "lastName": "نام خانوادگی",
+  "userGroup": "گروه کاربر",
+  "mobile": "موبایل",
+  "email": "ایمیل"
 }

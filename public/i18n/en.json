@@ -1,6 +1,11 @@
 {
-    "title":"samina panel",
-    "about": "About me",
-    "home": "Home"
-
-}
+    "title": "پنل حسابداری ثمینا",
+    "about": "درباره ما",
+    "home": "خانه",
+    "firstName": "نام",
+    "lastName": "نام خانوادگی",
+    "userGroup": "گروه کاربر",
+    "mobile": "موبایل",
+    "email": "ایمیل"
+  }
+  

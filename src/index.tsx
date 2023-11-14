@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider } from "antd";
 import "./i18n";
+import MainComponent from "./main";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,9 +16,8 @@ const root = ReactDOM.createRoot(
 root.render(
   
   <React.StrictMode>
-    <ConfigProvider >
-      <App />
-    </ConfigProvider>
+    <MainComponent />
+
   </React.StrictMode>
 );
 

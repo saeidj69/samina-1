@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PanelLayout from "../components/layout/panelLayout";
 import { useTranslation } from "react-i18next";
 import Tables from "../components/tables";
+import TablesC from "../components/tableC";
 
 interface DataType {
   key: React.Key;
@@ -47,7 +48,7 @@ export const Home = () => {
           handleEdit={handleEdit}
           handleDelete={handleDelete}
         /> */}
-        <Tables />
+        <TablesC />
       </div>
     </PanelLayout>
   );
